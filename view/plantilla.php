@@ -129,13 +129,13 @@ CUERPO DOCUMENTO
     CABEZOTE
     =============================================*/
 
-    include "model/cabezote.php";
+    include "module/cabezote.php";
 
     /*=============================================
     MENU
     =============================================*/
 
-    include "model/menu.php";
+    include "module/menu.php";
 
     /*=============================================
     CONTENIDO
@@ -150,17 +150,17 @@ CUERPO DOCUMENTO
          $_GET["ruta"] == "reportes" ||
          $_GET["ruta"] == "salir"){
 
-        include "model/".$_GET["ruta"].".php";
+        include "module/".$_GET["ruta"].".php";
 
       }else{
 
-        include "model/404.php";
+        include "module/404.php";
 
       }
 
     }else{
 
-      include "model/inicio.php";
+      include "module/inicio.php";
 
     }
 
@@ -168,13 +168,13 @@ CUERPO DOCUMENTO
     FOOTER
     =============================================*/
 
-    include "model/footer.php";
+    include "module/footer.php";
 
     echo '</div>';
 
   }else{
 
-    include "model/login.php";
+    include "module/login.php";
 
   }
 
